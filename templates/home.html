@@ -2,6 +2,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+
 {% for post in posts %}  <!-- if you use the context object, use it's assigned name else model_list-->
 <div class="post-entry">
 <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
